@@ -1,0 +1,29 @@
+{
+  "name": "route-methods",
+  "version": "0.0.0",
+  "description": "generate uniform list of routes and associated methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jon49/route-methods.git"
+  },
+  "keywords": [
+    "route",
+    "routing"
+  ],
+  "author": {
+      "name": "Jon Nyman",
+      "email": "nymanjon@gmail.com"
+  }
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jon49/route-methods/issues"
+  },
+  "homepage": "https://github.com/jon49/route-methods",
+  "dependencies": {
+    "ramda": "^0.17.1"
+  }
+}
