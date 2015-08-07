@@ -15,9 +15,9 @@
     "routing"
   ],
   "author": {
-      "name": "Jon Nyman",
-      "email": "nymanjon@gmail.com"
-  }
+    "name": "Jon Nyman",
+    "email": "nymanjon@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jon49/route-methods/issues"
@@ -25,5 +25,8 @@
   "homepage": "https://github.com/jon49/route-methods",
   "dependencies": {
     "ramda": "^0.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
   }
 }
