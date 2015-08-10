@@ -13,7 +13,7 @@ exports.subRoutes = function (routes) {
             methods: routes[1] }
         : r.pipe(r.toPairs, r.map(function (pair) { return [makeRoute(pair[0]), pair[1]]; }), r.map(exports.subRoutes))(routes[1]);
 };
-exports.flattenAltRoute = r.pipe(r.toPairs, r.reduce(function (acc, pairs) { return acc.concat(exports.subRoutes(pairs)); }, []));
+exports.flattenAltRoute = r.pipe(r.toPairs, r.reduce(function (acc, pairs) { return acc.concat(r.flatten(exports.subRoutes(pairs))); }, []));
 exports.flattenRoute = function (routeDefinition) {
     return r.has('route', routeDefinition) && r.has('methods', routeDefinition)
         ? [routeDefinition]

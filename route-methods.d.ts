@@ -33,7 +33,7 @@
 
 declare var routeMethods: {
     flattenAltRoute: RouteMethods.FlattenAltRoute
-    FlattenRoute: RouteMethods.FlattenRoute
+    flattenRoute: RouteMethods.FlattenRoute
     subRoutes: RouteMethods.SubRoutes
 }
 

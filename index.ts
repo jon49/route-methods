@@ -40,7 +40,7 @@ export const subRoutes = <T, S>(routes: [string, any]): RouteDefinition<T, S>[] 
 export const flattenAltRoute =
     r.pipe(
         r.toPairs,
-        r.reduce((acc, pairs: [string, any]) => acc.concat(subRoutes(pairs)), [])
+        r.reduce((acc, pairs: [string, any]) => acc.concat(r.flatten(subRoutes(pairs))), [])
     )
 
 export const flattenRoute = <T, S>(routeDefinition: any): RouteDefinition<T, S>[] =>
