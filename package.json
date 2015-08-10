@@ -1,6 +1,6 @@
 {
   "name": "route-methods",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "generate uniform list of routes and associated methods",
   "main": "index.js",
   "scripts": {

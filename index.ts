@@ -43,10 +43,7 @@ export const flattenAltRoute =
         r.reduce((acc, pairs: [string, any]) => acc.concat(subRoutes(pairs)), [])
     )
 
-
- 
 export const flattenRoute = <T, S>(routeDefinition: any): RouteDefinition<T, S>[] =>
     r.has('route', routeDefinition) && r.has('methods', routeDefinition)
         ? [routeDefinition]
     : flattenAltRoute(routeDefinition)
-
